@@ -19,7 +19,7 @@
   font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Change the background color on mouse-over */
@@ -59,7 +59,8 @@
   width: 500px;
   margin: auto;
   height: 450px;
-  background-color: bisque;
+  background-color: #fadcb2df;
+  box-shadow: 6px 8px #ffd28f;
 }
 
 .card {
