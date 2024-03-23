@@ -55,3 +55,34 @@
   height: 450px;
   background-color: bisque;
 }
+
+#nameText {
+  width: 900px;
+  height: 40px;
+  margin: auto;
+  align-items: center;
+}
+
+#nameText div{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#labelBox {
+  width: 900px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#inputLabel {
+  margin-bottom: 30px;
+}
+
+#inputLabel input{
+  width: 900px;
+}
+
+#inputLabel select{
+  width: 900px;
+}
