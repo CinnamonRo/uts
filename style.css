@@ -1,7 +1,7 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #b4bdff;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -22,13 +22,13 @@
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
+  background-color: #83a2ff7a;
   color: black;
 }
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #83a2ff;
   color: white;
 }
 
