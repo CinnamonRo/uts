@@ -43,6 +43,10 @@
   }
 }
 
+.content {
+  background-color: #fadcb2df;
+}
+
 #indexbody {
   position: absolute;
   top: 50%;
@@ -93,7 +97,7 @@
 }
 
 #inputLabel input {
-  width: 900px;
+  height: 30px;
 }
 
 #inputLabel select {
