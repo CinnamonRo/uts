@@ -51,3 +51,20 @@
     float: none;
   }
 }
+
+#indexbody{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#indexbody #a{
+  padding-top: 50px;
+  width: 500px;
+  margin: auto;
+  height: 450px;
+  background-color: bisque;
+}
+
+
