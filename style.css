@@ -14,10 +14,12 @@
 .header a {
   color: black;
   padding: 12px;
+  margin: 0px 15px 0px 15px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 25px;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 /* Change the background color on mouse-over */
@@ -60,6 +62,7 @@
   width: 17rem;
   height: 1000px;
   transition: 0.5s ease-in-out;
+  box-shadow: 6px 8px teal;
 }
 .card:hover {
   transform: scale(1.05);
