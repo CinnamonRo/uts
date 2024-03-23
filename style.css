@@ -62,7 +62,7 @@
   width: 17rem;
   height: 1000px;
   transition: 0.5s ease-in-out;
-  box-shadow: 6px 8px teal;
+  box-shadow: 6px 8px #ffd28f;
 }
 .card:hover {
   transform: scale(1.05);
