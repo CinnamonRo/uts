@@ -55,3 +55,12 @@
   height: 450px;
   background-color: bisque;
 }
+
+.card {
+  width: 17rem;
+  height: 1000px;
+  transition: 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
