@@ -17,3 +17,4 @@ body {
   
   .name {
     font-weight: bold;
+  }
