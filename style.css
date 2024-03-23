@@ -67,4 +67,11 @@
   background-color: bisque;
 }
 
+#incomeBox{
+  margin: auto;
+}
+
+#incomeLabel{
+  margin-bottom: 10px;
+}
 
