@@ -12,13 +12,14 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="content">
+  <body class="content" style="margin: 0">
     <!--Header-->
     <div class="header">
       <div class="header-left d-flex" style="align-items: center">
         <a class="" href="#"
           ><img src="image/money.svg" class="logo" alt="our logo"
         /></a>
+        <!--modify-->
         <h2 id="name">#username</h2>
       </div>
       <div class="header-right">
@@ -26,6 +27,86 @@
         <a href="income.html">Earn</a>
         <a href="outcome.html">Spend</a>
         <a href="aboutUs.html">Menu</a>
+      </div>
+    </div>
+
+    <!--Content-->
+    <div class="d-flex justify-content-center p-4">
+      <div
+        style="
+          height: 30vh;
+          width: 25vw;
+          background-color: #fec7b4;
+          border-radius: 10%;
+          padding: 30px 15px 20px 15px;
+          margin-right: 50px;
+        "
+      >
+        <div style="height: 25vh; margin: 10px 20px">
+          <p style="font-size: 25px; font-weight: 700">Current Balance</p>
+          <p style="font-size: 30px; font-weight: 800">Rp.</p>
+          <!--modify-->
+          <p
+            id="balance"
+            style="
+              text-align: right;
+              font-weight: 800;
+              font-size: 50px;
+              font-family: Raleway Heavy;
+            "
+          ></p>
+        </div>
+      </div>
+      <div
+        style="
+          height: 60vh;
+          width: 40vw;
+          background-color: #fec7b4;
+          border-radius: 10%;
+
+          padding: 30px 15px 20px 15px;
+        "
+      >
+        <p>Current Balance</p>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div
+      id="footer"
+      class="bg-dark text-white py-5"
+      style="height: 250px; overflow-y: hidden"
+    >
+      <div class="container d-flex justify-content-between">
+        <div>
+          <h2>PT. Kelompok Orang Cina</h2>
+          <p>
+            Ruko Pascal Timur<br />
+            No. 17<br />
+            Gading Serpong, Tangerang
+          </p>
+          <p>Tel : (+62) 878-0235-1355</p>
+        </div>
+        <div>
+          <div class="logo d-flex gap-2">
+            <img
+              src="image/facebook.png"
+              class="img-fluid"
+              style="max-width: 50px"
+            />
+            <img
+              src="image/instagram.png"
+              class="img-fluid"
+              style="max-width: 50px"
+            />
+            <img
+              src="image/youtube.png"
+              class="img-fluid"
+              style="max-width: 50px"
+            />
+          </div>
+          <p class="mb-0">Copyright &copy; 2024 | All rights reserved.</p>
+        </div>
       </div>
     </div>
     <script
