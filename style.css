@@ -118,15 +118,30 @@
 }
 
 #submit:hover {
-  background-color: #83a2ff;
+  background-color: #6dbf9f;
+  transform: translateY(-7px);
+  animation: 2s ease-in-out;
+}
+
+#submitt {
+  background-color: #b4bdff;
+  height: 7vh;
+  width: 12vw;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Dark gray shadow */
+}
+#submitt:hover {
+  background-color: #ffb3b3;
   transform: translateY(-7px);
   animation: 2s ease-in-out;
 }
 
 #box {
   background-color: #7ec8a9;
-  width: 70vw;
+  width: 60vw;
   height: 55vh;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(126, 200, 169, 0.5);
+  margin-bottom: 20px;
 }

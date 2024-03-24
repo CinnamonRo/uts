@@ -30,42 +30,47 @@
       </div>
     </div>
 
+    <!--content-->
     <!--modify-->
     <div class="d-flex justify-content-center m-3" style="align-items: center">
-      <img style="width: 6vh" src="image/svg/bank.svg" />
-      <h2 style="font-weight: 700">Save your money</h2>
+      <img style="width: 6vh; margin: 0 10px" src="image/svg/bank.svg" />
+      <h2 style="font-weight: 700; margin: 0 10px">Save your money</h2>
     </div>
 
     <div id="box" class="container-fluid pt-5">
       <div
         style="width: 55vw; height: 35vh; margin-left: auto; margin-right: auto"
       >
+        <!--1-->
         <div style="padding: 10px 10px">
-          <h3>Nominal</h3>
+          <h3>Keterangan</h3>
           <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInputValue"
-              placeholder="namaKelompok"
-            />
-            <label for="floatingInputValue">please enter your name</label>
+            <select class="form-select">
+              <option value=""></option>
+              <option value="gaji">Gaji</option>
+              <option value="bonus">Bonus</option>
+              <option value="uangJajan">Uang Jajan</option>
+              <option value="others">Others</option>
+            </select>
+            <label for="floatingInputValue">Masukkan asal uangmu</label>
           </div>
         </div>
+        <!--2-->
         <div style="padding: 10px 10px">
           <h3>Nominal</h3>
           <div class="form-floating">
             <input
-              type="text"
+              type="number"
               class="form-control"
               id="floatingInputValue"
               placeholder="namaKelompok"
             />
-            <label for="floatingInputValue">please enter your name</label>
+            <label for="floatingInputValue">masukkan uangmu</label>
           </div>
         </div>
+        <!--3-->
         <div style="padding: 10px 10px">
-          <h3>Nominal</h3>
+          <h3>Catatan</h3>
           <div class="form-floating">
             <input
               type="text"
@@ -73,15 +78,54 @@
               id="floatingInputValue"
               placeholder="namaKelompok"
             />
-            <label for="floatingInputValue">please enter your name</label>
+            <label for="floatingInputValue">masukkan catatan</label>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center pt-4">
+      <!--button-->
+      <div class="d-flex justify-content-center" style="padding: 30px">
         <button id="submit" class="btn">Submit</button>
       </div>
     </div>
 
+    <!--footer-->
+    <div
+      id="footer"
+      class="bg-dark text-white py-5"
+      style="height: 250px; overflow-y: hidden"
+    >
+      <div class="container d-flex justify-content-between">
+        <div>
+          <h2>PT. Kelompok Orang Cina</h2>
+          <p>
+            Ruko Pascal Timur<br />
+            No. 17<br />
+            Gading Serpong, Tangerang
+          </p>
+          <p>Tel : (+62) 878-0235-1355</p>
+        </div>
+        <div>
+          <div class="logo d-flex gap-2">
+            <img
+              src="image/img/facebook.png"
+              class="img-fluid"
+              style="max-width: 50px"
+            />
+            <img
+              src="image/img/instagram.png"
+              class="img-fluid"
+              style="max-width: 50px"
+            />
+            <img
+              src="image/img/youtube.png"
+              class="img-fluid"
+              style="max-width: 50px"
+            />
+          </div>
+          <p class="mb-0">Copyright &copy; 2024 | All rights reserved.</p>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
