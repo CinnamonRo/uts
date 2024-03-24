@@ -84,6 +84,7 @@
 #nameText div {
   text-align: center;
   margin-top: 50px;
+  margin: auto;
 }
 
 #labelBox {
@@ -102,5 +103,15 @@
 }
 
 #inputLabel select {
-  width: 900px;
+  height: 35px;
+}
+
+#submit{
+  background-color: #b4bdff;
+  font-weight: 600;
+}
+
+#submit:hover{
+  background-color: #83a2ff;
+  font-weight: 600;
 }
