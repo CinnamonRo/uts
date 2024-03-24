@@ -106,12 +106,12 @@
   height: 35px;
 }
 
-#submit{
+#submit {
   background-color: #b4bdff;
   font-weight: 600;
 }
 
-#submit:hover{
+#submit:hover {
   background-color: #83a2ff;
   font-weight: 600;
 }
