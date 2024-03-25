@@ -4,11 +4,11 @@ $(document).ready(function () {
     event.preventDefault(); // prevent form submit
     var username = "Hallo " + $("#inputName").val();
     localStorage.setItem("username", username);
-    window.location.href = "aboutUs.html";
+    window.location.href = "main.html";
   });
 });
 
-//main
+//header
 $(document).ready(function () {
   var username = localStorage.getItem("username");
   $("#nameShow").text(username);
