@@ -17,24 +17,24 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#income").submit(function (event) {
     event.preventDefault(); // prevent form submit
-    var keterangan = $("#catin").val();
-    var nominal = $("#moneyIn").val();
-    var catatan = $("#inNote").val();
+    var keteranganIn = $("#catin").val();
+    var nominalIn = $("#moneyIn").val();
+    var catatanIn = $("#inNote").val();
     
     if ($("#catIn").val() !== "") {
-      localStorage.setItem("keterangan", keterangan);
+      localStorage.setItem("keteranganIn", keteranganIn);
     } else {
       alert("masukkan keterangan");
     }
 
     if ($("#moneyIn").val() !== "") {
-      localStorage.setItem("nominal", nominal);
+      localStorage.setItem("nominalIn", nominalIn);
     } else {
       alert("masukkan nominal");
     }
 
     if ($("#inNote").val() !== "") {
-      localStorage.setItem("catatan", catatan);
+      localStorage.setItem("catatanIn", catatanIn);
     } else {
       alert("masukkan catatan");
     }
@@ -42,12 +42,14 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  var keterangan = localStorage.getItem("keterangan");
-  var nominal = localStorage.getItem("nominal");
-  var catatan = localStorage.getItem("catatan");
-  $("#transaction").text(keterangan);
-  $("#transaction").text(nominal);
-  $("#transaction").text(catatan);
+  var keteranganIn = localStorage.getItem("keteranganIn");
+  var nominalIn = localStorage.getItem("nominalIn");
+  var catatanIn = localStorage.getItem("catatanIn");
+  var newDiv = $("<div>").css({'background': 'rgb(160, 228, 255)', 'margin': '2px'});
+  newDiv.append($("<div style='margin: 10px; margin-bottom: 5px; font-family: arial; font-size: 20px;'>").text(keteranganIn));
+  newDiv.append($("<div style='margin: 10px; margin-bottom: 5px; font-family: arial; font-size: 20px;'>").text(nominalIn));
+  newDiv.append($("<div style='margin: 10px; margin-bottom: 5px; font-family: arial; font-size: 20px;'>").text(catatanIn));
+  $("#transaction").append(newDiv);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
