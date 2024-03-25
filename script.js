@@ -1,13 +1,15 @@
-const nameInput = document.getElementById("inputName");
-const nameSubmit = document.getElementById("nameSubmit");
-const nameShow = document.getElementById("nameShow");
+// index
+$(document).ready(function () {
+  $("#login").submit(function (event) {
+    event.preventDefault(); // prevent form submit
+    var username = "Hallo " + $("#inputName").val();
+    localStorage.setItem("username", username);
+    window.location.href = "aboutUs.html";
+  });
+});
 
-nameSubmit.addEventListener("click", function () {
-  const username = nameInput.value;
-  if (nameInput.trim() !== "") {
-    nameShow.textContent = username;
-  } else {
-    alert("Please enter your name");
-  }
-  console.log("hai");
+//main
+$(document).ready(function () {
+  var username = localStorage.getItem("username");
+  $("#nameShow").text(username);
 });
