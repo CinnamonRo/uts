@@ -47,6 +47,7 @@
   background-color: #fadcb2df;
   font-style: Helvetica Neue;
   margin: 0;
+  overflow: auto;
 }
 
 #indexbody {

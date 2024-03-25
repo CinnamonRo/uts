@@ -13,3 +13,12 @@ $(document).ready(function () {
   var username = localStorage.getItem("username");
   $("#nameShow").text(username);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let localStorageKey = "";
+  if (window.location.href.includes("income.html")) {
+    localStorageKey = "incomeExpenses";
+  } else if (window.location.href.includes("outcome.html")) {
+    localStorageKey = "outcomeExpenses";
+  }
+});
