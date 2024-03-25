@@ -6,7 +6,7 @@ nameSubmit.addEventListener("click", function () {
   const username = nameInput.value;
   console.log(username);
   //   alert("hai");
-  if (nameInput.trim() !== "") {
+  if (nameInput.trim() !== "" && nameInput.value !== "") {
     nameShow.textContent = username;
     tampilkan.classList.remove("d-none");
     indexbody.classList.add("d-none");

@@ -1,20 +1,20 @@
 // index
 $(document).ready(function () {
+  //login
   $("#login").submit(function (event) {
     event.preventDefault(); // prevent form submit
-    var username = "Hallo " + $("#inputName").val();
-    localStorage.setItem("username", username);
-    window.location.href = "main.html";
+    if ($("#inputName").val() !== "") {
+      localStorage.setItem("username", username);
+      window.location.href = "main.html";
+    } else {
+      alert("masukkan namamu");
+    }
   });
-});
 
-//header
-$(document).ready(function () {
+  //header
   var username = localStorage.getItem("username");
   $("#nameShow").text(username);
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let localStorageKey = "";
