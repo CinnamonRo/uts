@@ -11,7 +11,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body class="content">
     <!--Header-->
@@ -21,7 +20,7 @@
           ><img src="image/svg/money.svg" class="logo" alt="our logo"
         /></a>
         <!--modify-->
-        <h2>Hallo &nbsp</h2>
+        <h2>Hallo&nbsp</h2>
         <h2 id="nameShow">[name]</h2>
       </div>
       <div class="header-right">
@@ -35,7 +34,7 @@
     <!--content-->
     <!--modify-->
     <div class="d-flex justify-content-center m-3" style="align-items: center">
-      <img style="width: 6vh; margin: 0 10px" src="image/svg/bank.svg" />
+      <img style="width: 60px; margin: 0 10px" src="image/svg/bank.svg" />
       <h2 style="font-weight: 700; margin: 0 10px">Save your money</h2>
     </div>
 
@@ -43,10 +42,10 @@
       <div
         style="width: 55vw; height: 35vh; margin-left: auto; margin-right: auto"
       >
-        <form id="income">
-          <!--0-->
+        <!--0-->
+        <div id="messageIncome"></div>
         <div style="padding: 10px 10px">
-          <h3>Horee.. tanggalnya?</h3>
+          <h3>Horee.. tanggalnya?<span class="required">*</span></h3>
           <div class="form-floating">
             <input
               type="date"
@@ -60,21 +59,21 @@
 
         <!--1-->
         <div style="padding: 10px 10px">
-          <h3>Keterangan</h3>
+          <h3>Keterangan<span class="required">*</span></h3>
           <div class="form-floating">
             <select id="catIn" class="form-select">
               <option value=""></option>
-              <option value="gaji">Gaji</option>
-              <option value="bonus">Bonus</option>
-              <option value="uangJajan">Uang Jajan</option>
-              <option value="others">Others</option>
+              <option value="Gaji">Gaji</option>
+              <option value="Bonus">Bonus</option>
+              <option value="Uang Jajan">Uang Jajan</option>
+              <option value="Others">Others</option>
             </select>
             <label for="floatingInputValue">Masukkan asal uangmu</label>
           </div>
         </div>
         <!--2-->
         <div style="padding: 10px 10px">
-          <h3>Nominal</h3>
+          <h3>Nominal<span class="required">*</span></h3>
           <div class="form-floating">
             <input
               type="number"
@@ -87,7 +86,7 @@
         </div>
         <!--3-->
         <div style="padding: 10px 10px">
-          <h3>Catatan</h3>
+          <h3>Catatan<span class="required">*</span></h3>
           <div class="form-floating">
             <input
               type="text"
@@ -100,10 +99,8 @@
         </div>
         <!--Button-->
         <div class="d-flex justify-content-center p-2">
-          <button id="submitIn" class="btn">Submit</button>
+          <button id="submit" class="btn" onclick="submit()">Submit</button>
         </div>
-        </form>
-        
       </div>
     </div>
 
@@ -150,6 +147,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

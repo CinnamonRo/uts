@@ -11,7 +11,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body class="content">
     <!--Header-->
@@ -21,7 +20,7 @@
           ><img src="image/svg/money.svg" class="logo" alt="our logo"
         /></a>
         <!--modify-->
-        <h2>Hallo &nbsp</h2>
+        <h2>Hallo&nbsp</h2>
         <h2 id="nameShow">[name]</h2>
       </div>
       <div class="header-right">
@@ -43,73 +42,69 @@
       style="background-color: #ffcccc"
       class="container-fluid pt-5"
     >
-      <form id="form">
-        <div
-          style="
-            width: 55vw;
-            height: 35vh;
-            margin-left: auto;
-            margin-right: auto;
-          "
-        >
-          <div style="padding: 10px 10px">
-            <h3>Yahh.. tanggalnya?</h3>
-            <div class="form-floating">
-              <input
-                type="date"
-                class="form-control"
-                id="date"
-                placeholder="namaKelompok"
-              />
-              <label for="floatingInputValue">date</label>
-            </div>
-          </div>
-          <!--1-->
-          <div style="padding: 10px 10px">
-            <h3>Keterangan</h3>
-            <div class="form-floating">
-              <select id="categories" class="form-select">
-                <option value=""></option>
-                <option value="makan">Makan</option>
-                <option value="groceries">Groceries</option>
-                <option value="fun">Fun</option>
-                <option value="others">Others</option>
-              </select>
-              <label for="floatingInputValue">Dipakai ya</label>
-            </div>
-          </div>
-          <!--2-->
-          <div style="padding: 10px 10px">
-            <h3>Nominal</h3>
-            <div class="form-floating">
-              <input
-                type="number"
-                class="form-control"
-                id="amount"
-                placeholder="namaKelompok"
-              />
-              <label for="floatingInputValue">masukkan uangmu</label>
-            </div>
-          </div>
-          <!--3-->
-          <div style="padding: 10px 10px">
-            <h3>Catatan</h3>
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="note"
-                placeholder="namaKelompok"
-              />
-              <label for="floatingInputValue">masukkan catatan</label>
-            </div>
-          </div>
-          <!--button-->
-          <div class="d-flex justify-content-center p-2">
-            <button id="submitt" type="submit" class="btn">Submit</button>
+      <div
+        style="width: 55vw; height: 35vh; margin-left: auto; margin-right: auto"
+      >
+        <div id="messageOutcome"></div>
+        <div style="padding: 10px 10px">
+          <h3>Yahh.. tanggalnya?<span class="required">*</span></h3>
+          <div class="form-floating">
+            <input
+              type="date"
+              class="form-control"
+              id="tanggalPengeluaran"
+              placeholder="namaKelompok"
+            />
+            <label for="floatingInputValue">date</label>
           </div>
         </div>
-      </form>
+        <!--1-->
+        <div style="padding: 10px 10px">
+          <h3>Keterangan<span class="required">*</span></h3>
+          <div class="form-floating">
+            <select id="keteranganPengeluaran" class="form-select">
+              <option value=""></option>
+              <option value="Makan">Makan</option>
+              <option value="Groceries">Groceries</option>
+              <option value="Fun">Fun</option>
+              <option value="Others">Others</option>
+            </select>
+            <label for="floatingInputValue">Dipakai ya</label>
+          </div>
+        </div>
+        <!--2-->
+        <div style="padding: 10px 10px">
+          <h3>Nominal<span class="required">*</span></h3>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="pengeluaran"
+              placeholder="namaKelompok"
+            />
+            <label for="floatingInputValue">masukkan uangmu</label>
+          </div>
+        </div>
+        <!--3-->
+        <div style="padding: 10px 10px">
+          <h3>Catatan<span class="required">*</span></h3>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="catatanPengeluaran"
+              placeholder="namaKelompok"
+            />
+            <label for="floatingInputValue">masukkan catatan</label>
+          </div>
+        </div>
+        <!--button-->
+        <div class="d-flex justify-content-center p-2">
+          <button id="submitt" type="submit" class="btn" onclick="submitOut()">
+            Submit
+          </button>
+        </div>
+      </div>
     </div>
 
     <!--footer-->
@@ -155,6 +150,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
